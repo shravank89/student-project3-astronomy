@@ -22,6 +22,7 @@ image_filepath = "image.jpg"
 with open(image_filepath, "wb") as image_file:
     image_file.write(re.get(image_url).content)
 
+# Displaying on streamlit
 st.title(title)
 st.subheader(date)
 st.image(image_filepath)
